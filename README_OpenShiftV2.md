@@ -489,17 +489,17 @@ oo-install exited; removing temporary assets.
 yum install ruby git rubygems
 gem install rhc
 
-[root@openshift01 ~]# rhc setup --server osmaster.openshift.hq.nesdis.noaa.doc
+[root@openshift01 ~]# rhc setup --server osmaster.openshift.gmbc.com
 OpenShift Client Tools (RHC) Setup Wizard
 
 This wizard will help you upload your SSH keys, set your application namespace, and check that other programs like Git are properly installed.
 
-The server's certificate is self-signed, which means that a secure connection can't be established to 'osmaster.openshift.hq.nesdis.noaa.doc'.
+The server's certificate is self-signed, which means that a secure connection can't be established to 'osmaster.openshift.gmbc.com'.
 
 You may bypass this check, but any data you send to the server could be intercepted by others.
 
 Connect without checking the certificate? (yes|no): yes
-Login to osmaster.openshift.hq.nesdis.noaa.doc: gefter.chongong
+Login to osmaster.openshift.gmbc.com: gefter.chongong
 Password: *********
 
 OpenShift can create and store a token on disk which allows to you to access the server without using your password. The key is stored in your home
@@ -525,15 +525,15 @@ Checking for git ... found git version 1.8.3.1
 
 Checking common problems .
 
-An SSH connection could not be established to app1-mydemos.vtlapps.hq.nesdis.noaa.doc. Your SSH configuration may not be correct, or the application
+An SSH connection could not be established to app1-mydemos.vtlapps.gmbc.com. Your SSH configuration may not be correct, or the application
 may not be responding. getaddrinfo: Name or service not known (SocketError)
 
 Checking for a domain ... mydemos
 
 Checking for applications ... found 2
 
-  app1 http://app1-mydemos.vtlapps.hq.nesdis.noaa.doc/
-  app2 http://app2-mydemos.vtlapps.hq.nesdis.noaa.doc/
+  app1 http://app1-mydemos.vtlapps.gmbc.com/
+  app2 http://app2-mydemos.vtlapps.gmbc.com/
 
   You are using 2 of 100 total gears
   The following gear sizes are available to you: small
