@@ -17,8 +17,8 @@
 
 ## Installation
 Hosts
-osmaster.openshift.hq.nesdis.noaa.doc
-osnode.openshift.hq.nesdis.noaa.doc
+osmaster.gmbc.com
+osnode.gmbc.com
 
 Apps
 openshiftapps.hq.nesdis.noaa.doc
@@ -74,18 +74,18 @@ Do you want to register DNS entries for your OpenShift hosts with the
 same OpenShift DNS service that will be managing DNS records for the
 hosted applications? (y/n/q) y
 
-What domain do you want to use for the OpenShift hosts? openshift.hq.nesdis.noaa.doc
+What domain do you want to use for the OpenShift hosts? gmbc.com
 
 You have indicated that you want the installer to deploy DNS. Please configure a host to use as the nameserver.
 
 Hostname (the FQDN that other OpenShift hosts will use to connect to
-the host that you are describing): osmaster.openshift.hq.nesdis.noaa.doc
+the host that you are describing): osmaster.gmbc.com
 
 Hostname / IP address for SSH access to
-osmaster.openshift.hq.nesdis.noaa.doc from the host where you are
+osmaster.gmbc.com from the host where you are
 running oo-install. You can say 'localhost' if you are running
 oo-install from the system that you are describing:
-|osmaster.openshift.hq.nesdis.noaa.doc| localhost
+|osmaster.gmbc.com| localhost
 Using current user (root) for local installation.
 
 Detected IP address 10.40.57.81 at interface eth0 for this host.
@@ -113,9 +113,9 @@ Okay. I'm going to need you to tell me about the host where you want
 to install the Broker.
 
 Do you want to assign the Broker role to
-osmaster.openshift.hq.nesdis.noaa.doc? (y/n/q/?) y
+osmaster.gmbc.com? (y/n/q/?) y
 
-Okay. Adding the Broker role to osmaster.openshift.hq.nesdis.noaa.doc.
+Okay. Adding the Broker role to osmaster.gmbc.com.
 
 That's everything we need to know right now for this Broker.
 
@@ -131,9 +131,9 @@ Okay. I'm going to need you to tell me about the host where you want
 to install the Node.
 
 Do you want to assign the Node role to
-osmaster.openshift.hq.nesdis.noaa.doc? (y/n/q/?) y
+osmaster.gmbc.com? (y/n/q/?) y
 
-Okay. Adding the Node role to osmaster.openshift.hq.nesdis.noaa.doc.
+Okay. Adding the Node role to osmaster.gmbc.com.
 
 That's everything we need to know right now for this Node.
 
@@ -146,18 +146,18 @@ Node Configuration
 Okay, please provide information about this Node host.
 
 Hostname (the FQDN that other OpenShift hosts will use to connect to
-the host that you are describing): osnode.openshift.hq.nesdis.noaa.doc
+the host that you are describing): osnode.gmbc.com
 
 Hostname / IP address for SSH access to
-osnode.openshift.hq.nesdis.noaa.doc from the host where you are
+osnode.gmbc.com from the host where you are
 running oo-install. You can say 'localhost' if you are running
 oo-install from the system that you are describing:
-|osnode.openshift.hq.nesdis.noaa.doc| osnode.openshift.hq.nesdis.noaa.doc
+|osnode.gmbc.com| osnode.gmbc.com
 
-Username for SSH access to osnode.openshift.hq.nesdis.noaa.doc: |root|
+Username for SSH access to osnode.gmbc.com: |root|
 root
 
-Validating root@osnode.openshift.hq.nesdis.noaa.doc... looks good.
+Validating root@osnode.gmbc.com... looks good.
 
 Detected IP address 10.40.57.82 at interface eth0 for this host.
 Do you want to use this as the public IP information for this Node?
@@ -166,8 +166,8 @@ Do you want to use this as the public IP information for this Node?
 That's everything we need to know right now for this Node.
 
 Currently you have described the following host system(s):
-* osmaster.openshift.hq.nesdis.noaa.doc (Broker, NameServer, Node)
-* osnode.openshift.hq.nesdis.noaa.doc (Node)
+* osmaster.gmbc.com (Broker, NameServer, Node)
+* osnode.gmbc.com (Node)
 
 Do you want to configure an additional Node? (y/n/q) n
 
@@ -184,7 +184,7 @@ DNS Settings
   * Installer will deploy DNS
   * Application Domain: vtlapps.hq.nesdis.noaa.doc
   * Register OpenShift hosts with DNS? Yes
-  * Component Domain: openshift.hq.nesdis.noaa.doc
+  * Component Domain: gmbc.com
 
 Global Gear Settings
 +-------------------------+-------+
@@ -239,25 +239,25 @@ Node Districts
 +----------+-----------+---------------------------------------------------------------------------+
 | District | Gear Size | Nodes                                                                     |
 +----------+-----------+---------------------------------------------------------------------------+
-| Default  | small     | osmaster.openshift.hq.nesdis.noaa.doc,osnode.openshift.hq.nesdis.noaa.doc |
+| Default  | small     | osmaster.gmbc.com,osnode.gmbc.com |
 +----------+-----------+---------------------------------------------------------------------------+
 
 Role Assignments
 +------------+---------------------------------------+
-| Broker     | osmaster.openshift.hq.nesdis.noaa.doc |
-| NameServer | osmaster.openshift.hq.nesdis.noaa.doc |
-| Nodes      | osmaster.openshift.hq.nesdis.noaa.doc |
-|            | osnode.openshift.hq.nesdis.noaa.doc   |
+| Broker     | osmaster.gmbc.com |
+| NameServer | osmaster.gmbc.com |
+| Nodes      | osmaster.gmbc.com |
+|            | osnode.gmbc.com   |
 +------------+---------------------------------------+
 
 Host Information
 +---------------------------------------+------------+
 | Hostname                              | Roles      |
 +---------------------------------------+------------+
-| osmaster.openshift.hq.nesdis.noaa.doc | Broker     |
+| osmaster.gmbc.com | Broker     |
 |                                       | NameServer |
 |                                       | Node       |
-| osnode.openshift.hq.nesdis.noaa.doc   | Node       |
+| osnode.gmbc.com   | Node       |
 +---------------------------------------+------------+
 
 Choose an action:
@@ -299,7 +299,7 @@ DNS Settings
   * Installer will deploy DNS
   * Application Domain: vtlapps.hq.nesdis.noaa.doc
   * Register OpenShift hosts with DNS? Yes
-  * Component Domain: openshift.hq.nesdis.noaa.doc
+  * Component Domain: gmbc.com
 
 Global Gear Settings
 +-------------------------+-------+
@@ -354,21 +354,21 @@ Node Districts
 +----------+-----------+---------------------------------------+
 | District | Gear Size | Nodes                                 |
 +----------+-----------+---------------------------------------+
-| Default  | small     | osmaster.openshift.hq.nesdis.noaa.doc |
+| Default  | small     | osmaster.gmbc.com |
 +----------+-----------+---------------------------------------+
 
 Role Assignments
 +------------+---------------------------------------+
-| Broker     | osmaster.openshift.hq.nesdis.noaa.doc |
-| NameServer | osmaster.openshift.hq.nesdis.noaa.doc |
-| Node       | osmaster.openshift.hq.nesdis.noaa.doc |
+| Broker     | osmaster.gmbc.com |
+| NameServer | osmaster.gmbc.com |
+| Node       | osmaster.gmbc.com |
 +------------+---------------------------------------+
 
 Host Information
 +---------------------------------------+------------+
 | Hostname                              | Roles      |
 +---------------------------------------+------------+
-| osmaster.openshift.hq.nesdis.noaa.doc | Broker     |
+| osmaster.gmbc.com | Broker     |
 |                                       | NameServer |
 |                                       | Node       |
 +---------------------------------------+------------+
@@ -401,7 +401,7 @@ installation only? (y/n/q/?) n
 
 Preflight check: verifying system and resource availability.
 
-Checking osmaster.openshift.hq.nesdis.noaa.doc:
+Checking osmaster.gmbc.com:
 * Target host is running CentOS
 * Located getenforce
 * SELinux is running in enforcing mode
@@ -414,41 +414,41 @@ Error: No matching Packages to list
 Deploying workflow 'origin_deploy'.
 
 Preparing to install OpenShift Origin on the following hosts:
-  * osmaster.openshift.hq.nesdis.noaa.doc (Broker, DBServer, MsgServer, NameServer, Node)
+  * osmaster.gmbc.com (Broker, DBServer, MsgServer, NameServer, Node)
 
-Generating template for 'osmaster.openshift.hq.nesdis.noaa.doc'
+Generating template for 'osmaster.gmbc.com'
 ls: cannot access /var/named/Kvtlapps.hq.nesdis.noaa.doc*.key: No such file or directory
 * Checking for vtlapps.hq.nesdis.noaa.doc DNS key... not found; attempting to generate.
 * Key generation successful.
-ls: cannot access /var/named/Kopenshift.hq.nesdis.noaa.doc*.key: No such file or directory
-* Checking for openshift.hq.nesdis.noaa.doc DNS key... not found; attempting to generate.
+ls: cannot access /var/named/Kgmbc.com*.key: No such file or directory
+* Checking for gmbc.com DNS key... not found; attempting to generate.
 * Key generation successful.
 * BIND DNS enabled.
-* Created template /tmp/oo_install_configure_osmaster.openshift.hq.nesdis.noaa.doc.pp
+* Created template /tmp/oo_install_configure_osmaster.gmbc.com.pp
 
-osmaster.openshift.hq.nesdis.noaa.doc: Running Puppet deployment for host
+osmaster.gmbc.com: Running Puppet deployment for host
 Error: Could not uninstall module 'openshift-openshift_origin'
   Module 'openshift-openshift_origin' is not installed
-osmaster.openshift.hq.nesdis.noaa.doc: Puppet module removal failed. This is expected if the module was not installed.
-osmaster.openshift.hq.nesdis.noaa.doc: Attempting Puppet module installation (try #1)
+osmaster.gmbc.com: Puppet module removal failed. This is expected if the module was not installed.
+osmaster.gmbc.com: Attempting Puppet module installation (try #1)
 Warning: Symlinks in modules are unsupported. Please investigate symlink duritong-sysctl-0.0.4/spec/fixtures/modules/sysctl/lib->../../../../lib.
 Warning: Symlinks in modules are unsupported. Please investigate symlink duritong-sysctl-0.0.4/spec/fixtures/modules/sysctl/manifests->../../../../manifests.
-osmaster.openshift.hq.nesdis.noaa.doc: Puppet module installation succeeded.
-osmaster.openshift.hq.nesdis.noaa.doc: Cleaning yum repos.
-osmaster.openshift.hq.nesdis.noaa.doc: Running the Puppet deployment. This step may take up to an hour.
-osmaster.openshift.hq.nesdis.noaa.doc: Puppet deployment completed.
-osmaster.openshift.hq.nesdis.noaa.doc: Cleaning up temporary files.
+osmaster.gmbc.com: Puppet module installation succeeded.
+osmaster.gmbc.com: Cleaning yum repos.
+osmaster.gmbc.com: Running the Puppet deployment. This step may take up to an hour.
+osmaster.gmbc.com: Puppet deployment completed.
+osmaster.gmbc.com: Cleaning up temporary files.
 
 Host deployments completed succesfully.
 
 Restarting services in dependency order.
-osmaster.openshift.hq.nesdis.noaa.doc: service named restart succeeded.
-osmaster.openshift.hq.nesdis.noaa.doc: service mongod restart succeeded.
-osmaster.openshift.hq.nesdis.noaa.doc: service ruby193-mcollective stop succeeded.
-osmaster.openshift.hq.nesdis.noaa.doc: service activemq restart succeeded.
-osmaster.openshift.hq.nesdis.noaa.doc: service ruby193-mcollective start succeeded.
-osmaster.openshift.hq.nesdis.noaa.doc: service openshift-broker restart succeeded.
-osmaster.openshift.hq.nesdis.noaa.doc: service openshift-console restart succeeded.
+osmaster.gmbc.com: service named restart succeeded.
+osmaster.gmbc.com: service mongod restart succeeded.
+osmaster.gmbc.com: service ruby193-mcollective stop succeeded.
+osmaster.gmbc.com: service activemq restart succeeded.
+osmaster.gmbc.com: service ruby193-mcollective start succeeded.
+osmaster.gmbc.com: service openshift-broker restart succeeded.
+osmaster.gmbc.com: service openshift-console restart succeeded.
 
 Now performing post-installation tasks.
 
