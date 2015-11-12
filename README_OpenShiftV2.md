@@ -4,10 +4,7 @@
 
 1. [Installation](#installation)
 2. [Add new users](#users)
-3. [Setup - The basics of getting started with openshiftv2](#setup)
-    * [What openshiftv2 affects](#what-openshiftv2-affects)
-    * [Setup requirements](#setup-requirements)
-    * [Beginning with openshiftv2](#beginning-with-openshiftv2)
+3. [Installing new RHC Client and Setup](#client)
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 5. [Limitations - OS compatibility, etc.](#limitations)
@@ -484,15 +481,63 @@ oo-install exited; removing temporary assets.
  htpasswd /etc/openshift/htpasswd user1
  enter new user's password
 
-If applicable, this section should have a brief description of the technology
-the module integrates with and what that integration enables. This section
-should answer the questions: "What does this module *do*?" and "Why would I use
-it?"
 
-If your module has a range of functionality (installation, configuration,
-management, etc.) this is the time to mention it.
+##Client 
 
-## Setup
+yum install ruby git rubygems
+gem install rhc
+
+[root@openshift01 ~]# rhc setup --server osmaster.openshift.hq.nesdis.noaa.doc
+OpenShift Client Tools (RHC) Setup Wizard
+
+This wizard will help you upload your SSH keys, set your application namespace, and check that other programs like Git are properly installed.
+
+The server's certificate is self-signed, which means that a secure connection can't be established to 'osmaster.openshift.hq.nesdis.noaa.doc'.
+
+You may bypass this check, but any data you send to the server could be intercepted by others.
+
+Connect without checking the certificate? (yes|no): yes
+Login to osmaster.openshift.hq.nesdis.noaa.doc: gefter.chongong
+Password: *********
+
+OpenShift can create and store a token on disk which allows to you to access the server without using your password. The key is stored in your home
+directory and should be kept secret.  You can delete the key at any time by running 'rhc logout'.
+Generate a token now? (yes|no) yes
+Generating an authorization token for this client ... lasts about 1 day
+
+Saving configuration to /root/.openshift/express.conf ... done
+
+Your public SSH key must be uploaded to the OpenShift server to access code.  Upload now? (yes|no) yes
+
+  default (type: ssh-rsa)
+  -----------------------
+    Fingerprint: 7a:bc:9b:07:ce:28:6c:4f:50:05:24:16:ba:64:83:59
+
+You can enter a name for your key, or leave it blank to use the default name. Using the same name as an existing key will overwrite the old key.
+
+Provide a name for this key: |gefterchongongop| gefter_key
+
+Uploading key 'gefter_key' ... done
+
+Checking for git ... found git version 1.8.3.1
+
+Checking common problems .
+
+An SSH connection could not be established to app1-mydemos.vtlapps.hq.nesdis.noaa.doc. Your SSH configuration may not be correct, or the application
+may not be responding. getaddrinfo: Name or service not known (SocketError)
+
+Checking for a domain ... mydemos
+
+Checking for applications ... found 2
+
+  app1 http://app1-mydemos.vtlapps.hq.nesdis.noaa.doc/
+  app2 http://app2-mydemos.vtlapps.hq.nesdis.noaa.doc/
+
+  You are using 2 of 100 total gears
+  The following gear sizes are available to you: small
+
+Your client tools are now configured.
+
 
 ### What openshiftv2 affects
 
