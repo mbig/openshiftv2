@@ -16,6 +16,7 @@
 
 
 ## Installation
+
 Hosts
 osmaster.gmbc.com
 osnode.gmbc.com
@@ -26,6 +27,7 @@ vtlapps.gmbc.com
 
 DNS
 openshiftdns.gmbc.com
+
 
 
 [root@osmaster ~]# sh <(curl -s https://install.openshift.com/origin-m4)
