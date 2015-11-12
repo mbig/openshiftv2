@@ -21,11 +21,11 @@ osmaster.gmbc.com
 osnode.gmbc.com
 
 Apps
-openshiftapps.hq.nesdis.noaa.doc
-vtlapps.hq.nesdis.noaa.doc
+openshiftapps.gmbc.com
+vtlapps.gmbc.com
 
 DNS
-openshiftdns.hq.nesdis.noaa.doc
+openshiftdns.gmbc.com
 
 
 [root@osmaster ~]# sh <(curl -s https://install.openshift.com/origin-m4)
@@ -68,7 +68,7 @@ All of your hosted applications will have a DNS name of the form:
 <app_name>-<owner_namespace>.<all_applications_domain>
 
 What domain name should be used for all of the hosted apps in your
-OpenShift system? |example.com| vtlapps.hq.nesdis.noaa.doc
+OpenShift system? |example.com| vtlapps.gmbc.com
 
 Do you want to register DNS entries for your OpenShift hosts with the
 same OpenShift DNS service that will be managing DNS records for the
@@ -182,7 +182,7 @@ For more flexibility, rerun the installer in advanced mode (-a).
 
 DNS Settings
   * Installer will deploy DNS
-  * Application Domain: vtlapps.hq.nesdis.noaa.doc
+  * Application Domain: vtlapps.gmbc.com
   * Register OpenShift hosts with DNS? Yes
   * Component Domain: gmbc.com
 
@@ -297,7 +297,7 @@ For more flexibility, rerun the installer in advanced mode (-a).
 
 DNS Settings
   * Installer will deploy DNS
-  * Application Domain: vtlapps.hq.nesdis.noaa.doc
+  * Application Domain: vtlapps.gmbc.com
   * Register OpenShift hosts with DNS? Yes
   * Component Domain: gmbc.com
 
@@ -417,8 +417,8 @@ Preparing to install OpenShift Origin on the following hosts:
   * osmaster.gmbc.com (Broker, DBServer, MsgServer, NameServer, Node)
 
 Generating template for 'osmaster.gmbc.com'
-ls: cannot access /var/named/Kvtlapps.hq.nesdis.noaa.doc*.key: No such file or directory
-* Checking for vtlapps.hq.nesdis.noaa.doc DNS key... not found; attempting to generate.
+ls: cannot access /var/named/Kvtlapps.gmbc.com*.key: No such file or directory
+* Checking for vtlapps.gmbc.com DNS key... not found; attempting to generate.
 * Key generation successful.
 ls: cannot access /var/named/Kgmbc.com*.key: No such file or directory
 * Checking for gmbc.com DNS key... not found; attempting to generate.
