@@ -3,7 +3,7 @@
 #### Table of Contents
 
 1. [Installation](#installation)
-2. [Add new users](#new-users)
+2. [Add new users](#users)
 3. [Setup - The basics of getting started with openshiftv2](#setup)
     * [What openshiftv2 affects](#what-openshiftv2-affects)
     * [Setup requirements](#setup-requirements)
@@ -480,7 +480,7 @@ oo-install exited; removing temporary assets.
 
 
 
-## New users
+## Users
  htpasswd /etc/openshift/htpasswd user1
  enter new user's password
 
