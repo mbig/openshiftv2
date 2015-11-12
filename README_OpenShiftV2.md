@@ -87,18 +87,18 @@ oo-install from the system that you are describing:
 |osmaster.gmbc.com| localhost
 Using current user (root) for local installation.
 
-Detected IP address 10.40.57.81 at interface eth0 for this host.
+Detected IP address 10.10.10.10 at interface eth0 for this host.
 Do you want Nodes to use this IP information to reach this host?
 (y/n/q/?) y
 
 Normally, the BIND DNS server that is installed on this host will be
 reachable from other OpenShift components using the host's configured
-IP address (10.40.57.81).
+IP address (10.10.10.10).
 
 If that will work in your deployment, press <enter> to accept the
 default value. Otherwise, provide an alternate IP address that will
 enable other OpenShift components to reach the BIND DNS service on
-this host: |10.40.57.81| 10.40.57.81
+this host: |10.10.10.10| 10.10.10.10
 
 That's all of the DNS information that we need right now. Next, we
 need to gather information about the hosts in your OpenShift
@@ -158,7 +158,7 @@ root
 
 Validating root@osnode.gmbc.com... looks good.
 
-Detected IP address 10.40.57.82 at interface eth0 for this host.
+Detected IP address 10.10.10.11 at interface eth0 for this host.
 Do you want to use this as the public IP information for this Node?
 (y/n/q/?) y
 
