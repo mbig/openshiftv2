@@ -3,7 +3,7 @@
 #### Table of Contents
 
 1. [Installation](#installation)
-2. [Module Description - What the module does and why it is useful](#module-description)
+2. [Add new users](#new-users)
 3. [Setup - The basics of getting started with openshiftv2](#setup)
     * [What openshiftv2 affects](#what-openshiftv2-affects)
     * [Setup requirements](#setup-requirements)
@@ -480,7 +480,9 @@ oo-install exited; removing temporary assets.
 
 
 
-## Module Description
+## New users
+ htpasswd /etc/openshift/htpasswd user1
+ enter new user's password
 
 If applicable, this section should have a brief description of the technology
 the module integrates with and what that integration enables. This section
